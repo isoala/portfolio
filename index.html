@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdurahman Alarcon — IT student at George Mason University. Engineer and Cybersecurity Researcher." />
+  <meta name="theme-color" content="#08080f" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Abdurahman Alarcon — Portfolio" />
+  <meta property="og:description" content="IT Student | Engineer | Cybersecurity Researcher | GMU" />
+  <meta property="og:type"        content="website" />
+
+  <title>Abdurahman Alarcon — Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <header>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Home">Isoala</a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about"      data-section="about">About</a></li>
+        <li><a href="#education"  data-section="education">Education</a></li>
+        <li><a href="#experience" data-section="experience">Experience</a></li>
+        <li><a href="#projects"   data-section="projects">Projects</a></li>
+        <li><a href="#skills"     data-section="skills">Skills</a></li>
+      </ul>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" role="menu" aria-hidden="true">
+      <a href="#about"      role="menuitem" class="mobile-link">About</a>
+      <a href="#education"  role="menuitem" class="mobile-link">Education</a>
+      <a href="#experience" role="menuitem" class="mobile-link">Experience</a>
+      <a href="#projects"   role="menuitem" class="mobile-link">Projects</a>
+      <a href="#skills"     role="menuitem" class="mobile-link">Skills</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge" aria-label="Status: Open to Opportunities">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Open to Opportunities
+        </div>
+
+        <h1 class="hero-name" id="heroName" aria-label="Abdurahman Ismaeel Alarcon">
+            <!-- testing out no animation
+          <span class="name-short" aria-hidden="true">A.I.<br />Alarcon</span>
+        -->
+          <span class="name-full"  aria-hidden="true">Abdurahman<br /><em>Alarcon</em></span>
+        </h1>
+
+        <p class="hero-tagline">
+          IT Student &nbsp;&middot;&nbsp; Engineer &nbsp;&middot;&nbsp; Cybersecurity Researcher
+        </p>
+
+        <p class="hero-school">
+          George Mason University &nbsp;&mdash;&nbsp;
+          <span>B.S. Information Technology (Expected May 2027)</span>
+        </p>
+
+        <ul class="hero-socials" role="list" aria-label="Social profiles">
+          <li><a href="https://github.com/isoala" class="social-link" aria-label="GitHub"   target="_blank" rel="noopener noreferrer"><i class="fab fa-github"      aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/abdurahman-alarcon/" class="social-link" aria-label="LinkedIn"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="https://codepen.io/isoala" class="social-link" aria-label="CodePen"   target="_blank" rel="noopener noreferrer"><i class="fab fa-codepen"     aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/manny.ent" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"   aria-hidden="true"></i></a></li>
+          <li><a href="https://www.goodreads.com/user/show/189699536-iso" class="social-link" aria-label="Goodreads" target="_blank" rel="noopener noreferrer"><i class="fab fa-goodreads-g" aria-hidden="true"></i></a></li>
+        </ul>
+
+        <div class="hero-ctas">
+          <a href="resume 6_24_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" download="Alarcon_Resume.pdf">
+            <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <i class="fas fa-folder-open" aria-hidden="true"></i> View Projects
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+             <div class="orb orb-4"></div>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="marquee-bar" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="accent">Department of State</span>
+        <span class="accent">✦</span>
+        <span>Outamation</span>
+        <span class="accent">✦</span>
+        <span>CCI</span>
+        <span class="accent">✦</span>
+        <span>Library of Congress</span>
+        <span class="accent">✦</span>
+        <span>Network Infrastructure</span>
+        <span class="accent">✦</span>
+        <span class="accent">GMU</span>
+        <span class="accent">✦</span>
+        <span>Cybersecurity Researcher</span>
+        <span class="accent">✦</span>
+        <span>AI / ML</span>
+        <span class="accent">✦</span>
+        <span>Network Infrastructure</span>
+        <span class="accent">✦</span>
+        <span class="accent">Department of State</span>
+        <span class="accent">✦</span>
+        <span>Outamation</span>
+        <span class="accent">✦</span>
+        <span>CCI</span>
+        <span class="accent">✦</span>
+        <span>Library of Congress</span>
+        <span class="accent">✦</span>
+        <span>Network Infrastructure</span>
+        <span class="accent">✦</span>
+        <span class="accent">GMU</span>
+        <span class="accent">✦</span>
+        <span>Cybersecurity Researcher</span>
+        <span class="accent">✦</span>
+        <span>AI / ML</span>
+        <span class="accent">✦</span>
+        <span>Network Infrastructure</span>
+        <span class="accent">✦</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <p class="eyebrow">About</p>
+        <h2 id="about-heading" class="section-title">
+          A Little Bit <span class="gradient-text">About Me</span>
+        </h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm an Information Technology student at George Mason University's College of Engineering &amp; Computing, with hands-on experience across AI/ML engineering, cybersecurity research, and network infrastructure.</p>
+            <p>My work spans building AI inference models to map CVEs to MITRE ATT&amp;CK techniques at the Commonwealth Cyber Initiative, engineering RAG pipelines for mortgage document processing at Outamation, and deploying enterprise network infrastructure at the Library of Congress. Earlier I built a mobile application backend for the Department of State used by 200+ US expatriates.</p>
+            <p>I'm driven by the intersection of intelligent systems and security — building tools that make sense of complex threat landscapes at scale.</p>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="card reveal reveal-delay-1">
+              <p class="card-label">Interests</p>
+              <div class="interest-row">
+                <span class="interest-icon" aria-hidden="true"><i class="fas fa-hand-fist"></i></span>
+                Brazilian Jiu-Jitsu
+              </div>
+              <div class="interest-row">
+                <span class="interest-icon" aria-hidden="true"><i class="fas fa-person-hiking"></i></span>
+                Hiking
+              </div>
+              
+              <div class="interest-row">
+                <span class="interest-icon" aria-hidden="true"><i class="fas fa-chess"></i></span>
+                Chess &mdash; <em>1200 rating</em>
+              </div>
+              <div class="interest-row">
+                <span class="interest-icon" aria-hidden="true"><i class="fas fa-book"></i></span>
+                Reading &mdash; <em>Classic Literature</em>
+              </div>
+              <div class="interest-row">
+                <span class="interest-icon" aria-hidden="true"><i class="fas fa-mountain"></i></span>
+                Rock Climbing
+              </div>
+              <div class="interest-row">
+                <span class="interest-icon" aria-hidden="true"><i class="fas fa-dumbbell"></i></span>
+                Weightlifting
+              </div>
+              <div class="interest-row">
+                <span class="interest-icon" aria-hidden="true"><i class="fas fa-shirt"></i></span>
+                Vintage Menswear Fashion
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="orb orb-4"></div>
+
+    </section>
+
+    <!-- ══════════════════════════════════════
+         EDUCATION
+    ══════════════════════════════════════ -->
+    <section id="education" aria-labelledby="education-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Education</p>
+        <h2 id="education-heading" class="section-title">
+          Academic <span class="gradient-text">Journey</span>
+        </h2>
+
+        <ol class="timeline" role="list">
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card timeline-card">
+              <header class="card-header">
+                <h3 class="card-title">Northern Virginia Community College</h3>
+                <span class="date-badge">Graduated 2025</span>
+              </header>
+              <p class="card-org">A.S. Information Technology</p>
+              <p class="card-desc">Completed coursework in networking, systems administration, and programming fundamentals.</p>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card timeline-card">
+              <header class="card-header">
+                <h3 class="card-title">George Mason University</h3>
+                <span class="date-badge">Expected May 2027</span>
+              </header>
+              <p class="card-org">
+                B.S. Information Technology &mdash; College of Engineering &amp; Computing
+                <span class="badge-inprogress">In Progress</span>
+              </p>
+              <p class="card-desc">Pursuing a Bachelor of Science in Information Technology with research in AI-driven cybersecurity and enterprise networking.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         EXPERIENCE
+    ══════════════════════════════════════ -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="section-inner">
+
+        <p class="eyebrow">Experience</p>
+        <h2 id="experience-heading" class="section-title">
+          Professional <span class="gradient-text">Experience</span>
+        </h2>
+        <div class="orb orb-5"></div>
+
+
+        <ol class="timeline" role="list">
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card timeline-card">
+              <header class="card-header">
+                <h3 class="card-title">Network Engineer Intern</h3>
+                <span class="date-badge">May 2026 &ndash; Present</span>
+              </header>
+              <p class="card-org">Library of Congress &mdash; Washington, DC</p>
+              <ul class="card-bullets">
+                <li>Configured and troubleshot TCP/IP, DNS, DHCP, and MPLS across enterprise environments, supporting VLAN segmentation and firewall policy management to enforce traffic control and network security.</li>
+                <li>Monitored and supported AWS VPC infrastructure including subnet routing and security group configuration, ensuring cloud connectivity and access control across the organization.</li>
+                <li>Automated endpoint provisioning via PowerShell and Bash scripts across Windows and macOS; managed device identity through Active Directory, Intune, and ServiceNow — resolving ~20 network-related tickets per week.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card timeline-card">
+              <header class="card-header">
+                <h3 class="card-title">Undergraduate Cybersecurity Researcher</h3>
+                <span class="date-badge">Feb 2026 &ndash; Present</span>
+              </header>
+              <p class="card-org">Commonwealth Cyber Initiative &mdash; Fairfax, VA</p>
+              <ul class="card-bullets">
+                <li>Built an AI inference model using MiniLM to map non-KEV CVEs lacking ATT&amp;CK entries to MITRE ATT&amp;CK techniques, expanding coverage to 2,000+ CVEs.</li>
+                <li>Optimized lightweight transformer-based NLP workflows using FAISS for similarity search, matching vulnerability descriptions with adversarial tactics across cybersecurity datasets.</li>
+                <li>Presented findings to NSWC Dahlgren stakeholders to align research direction with evolving DoD-relevant threat assessment goals. Awarded $2,000 monthly research stipend.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card timeline-card">
+              <header class="card-header">
+                <h3 class="card-title">AI Machine Learning Engineer Intern</h3>
+                <span class="date-badge">July 2025 &ndash; Aug 2025</span>
+              </header>
+              <p class="card-org">Outamation &mdash; Fairfax, VA</p>
+              <ul class="card-bullets">
+                <li>Optimized mortgage document processing using Python and AI models to classify, standardize, and extract key data fields including salaries, dates, and account numbers.</li>
+                <li>Performed analysis and testing of AI models (DocLLM, LangChain, LayoutLM) for file classification and data extraction to identify optimal tools for mortgage industry applications.</li>
+                <li>Delivered actionable analysis and benchmarked AI tools to enhance data accuracy and operational efficiency across document processing workflows.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal reveal-delay-3">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="card timeline-card">
+              <header class="card-header">
+                <h3 class="card-title">Software Engineering Intern</h3>
+                <span class="date-badge">May 2024 &ndash; Aug 2024</span>
+              </header>
+              <p class="card-org">Department of State &mdash; Fairfax, VA</p>
+              <ul class="card-bullets">
+                <li>Deployed an Azure-based mobile application backend using Azure SQL and Node.js, improving access to critical resources for 200 US expatriate users and reducing inquiry calls by 20%.</li>
+                <li>Automated IT network security protocols through PowerShell scripting and debugged software systematically, reducing DOS employee service request tickets by 30%.</li>
+                <li>Maintained Cisco networking systems and Linux servers across embassy departments, ensuring 100% system uptime for 3 critical interdepartment communication services.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════ -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-inner">
+                <div class="orb orb-6"></div>
+
+        <p class="eyebrow">Projects</p>
+        <h2 id="projects-heading" class="section-title">
+          Some <span class="gradient-text">Projects</span>
+        </h2>
+
+        <ul class="projects-grid" role="list">
+          <li class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <a href="#" class="project-gh-link" aria-label="Mortgage RAG Pipeline on GitHub" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+              <h3 class="project-name">Mortgage RAG Pipeline</h3>
+              <p class="project-desc">Engineered a Retrieval Augmented Generation pipeline to enhance LLM accuracy; chunked and embedded 1,000+ documents, reducing model hallucination by 25%. Implemented hybrid search and re-ranking to cut query latency by 40%.</p>
+              <ul class="tag-row" role="list" aria-label="Technologies">
+                <li class="tag">Python</li>
+                <li class="tag">LangChain</li>
+                <li class="tag">PyTorch</li>
+                <li class="tag">TensorFlow</li>
+                <li class="tag">RAG</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="project-card reveal reveal-delay-1">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <i class="fas fa-shield-halved"></i>
+                </div>
+                <a href="#" class="project-gh-link" aria-label="CVE-ATT&CK Mapper on GitHub" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+              <h3 class="project-name">CVE &rarr; ATT&amp;CK Mapper</h3>
+              <p class="project-desc">AI inference model using MiniLM and FAISS to semantically map unresolved CISA KEV CVEs to MITRE ATT&amp;CK techniques, expanding coverage to 2,000+ vulnerabilities.</p>
+              <ul class="tag-row" role="list" aria-label="Technologies">
+                <li class="tag">Python</li>
+                <li class="tag">MiniLM</li>
+                <li class="tag">PyTorch</li>
+                <li class="tag">TensorFlow</li>
+                <li class="tag">MITRE ATT&amp;CK</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="project-card reveal reveal-delay-2">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <a href="#" class="project-gh-link" aria-label="Mission Türkiye Guide on GitHub" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+              <h3 class="project-name">Mission T&uuml;rkiye Guide</h3>
+              <p class="project-desc">Azure-based mobile application backend built with Azure SQL and Node.js, providing critical resources to 200+ US expatriates and reducing embassy inquiry calls by 20%.</p>
+              <ul class="tag-row" role="list" aria-label="Technologies">
+                <li class="tag">Azure SQL</li>
+                <li class="tag">Node.js</li>
+                <li class="tag">PowerApps</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="project-card reveal reveal-delay-3">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <i class="fas fa-chess-knight"></i>
+                </div>
+                <a href="#" class="project-gh-link" aria-label="Chess-CLI on GitHub" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+              <h3 class="project-name">Chess-CLI</h3>
+              <p class="project-desc">A fully-featured command-line chess game written in Java with move validation, check/checkmate detection, and a clean terminal UI.</p>
+              <ul class="tag-row" role="list" aria-label="Technologies">
+                <li class="tag">Java</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      <div class="scroll-hint" aria-hidden="true">
+             <div class="orb orb-4"></div>
+        <div class="scroll-line"></div>
+      </div>
+      
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SKILLS
+    ══════════════════════════════════════ -->
+    
+<section id="skills" aria-labelledby="skills-heading" class="tools-highlight">
+      <div class="section-inner">
+<div class="tools-panel">
+  <div class="tools-left-col">
+    <div>
+      <h2 id="skills-heading" class="tools-heading">
+        <em>Engineering</em><br>Background.
+      </h2>
+    </div>
+    
+    <div class="tools-sub-grid">
+      <div class="tools-column-list">
+        <h3 class="skill-category">Development & AI</h3>
+        <span class="skill-item">Python / ML</span>
+        <span class="skill-item">React / JS</span>
+        <span class="skill-item">PyTorch / TensorFlow</span>
+        <span class="skill-item">Deep Learning</span>
+      </div>
+
+      <div class="tools-column-list">
+        <h3 class="skill-category">Infrastructure</h3>
+        <span class="skill-item">Network Architecture</span>
+        <span class="skill-item">Linux Admin</span>
+        <span class="skill-item">Docker & CI/CD</span>
+        <span class="skill-item">ServiceNow ITSM</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tools-right-col">
+    <div class="tools-sub-grid">
+      <div class="tools-column-list">
+        <h3 class="skill-category">Network Security</h3>
+        <span class="skill-item">Next-Gen Firewalls (NGFW)</span>
+        <span class="skill-item">Network Segmentation</span>
+        <span class="skill-item">VLAN Management</span>
+        <span class="skill-item">Traffic Analysis</span>
+        <span class="skill-item">VPN & Tunneling</span>
+        <span class="skill-item">DPI & Filtering</span>
+        <span class="skill-item">Anomaly Detection</span>
+
+      </div>
+
+      <div class="tools-column-list">
+        <h3 class="skill-category">Cyber Research</h3>
+        <span class="skill-item">AI-Driven IPS/IDS</span>
+        <span class="skill-item">Packet-Level Analytics</span>
+        <span class="skill-item">MITRE ATT&CK</span>
+        <span class="skill-item">MITRE D3FEND</span>
+        <span class="skill-item">Threat Intelligence</span>
+        <span class="skill-item">Security Orchestration</span>
+        <span class="skill-item">Wireshark Analysis</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="section-inner">
+        <div class="contact-grid">
+          <div>
+            <p class="contact-eyebrow">Let’s work together</p>
+            <h2 id="contact-heading" class="contact-heading">
+              <span class="contact-say"><b>Say</b></span>
+              <span class="contact-hello"><em><b>hello.</b></em></span>
+            </h2>
+            <p class="contact-copy">If you want to grab coffee or have a chat, let me know!</p>
+            <div class="contact-links">
+              <a href="mailto:alarconabdurahman@gmail.com" class="social-link" aria-label="LinkedIn"  target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/abdurahman-alarcon/" class="social-link" aria-label="LinkedIn"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <p><span class="gradient-text">© Abdurahman Alarcon</span> &middot; 2026</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
